@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de JQuery</title>
+        <script src="../jquery-3.7.0.min.js"></script>
+        <style>
+            #bloco {
+                width: 200px;
+                height: 200px;
+                background-color: #000;
+            }
+            #bloco2 {
+                width: 200px;
+                height: 200px;
+                background-color: #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex;justify-content: space-around;">
+            <div id="bloco"></div>
+            <div id="bloco2"></div>
+        </div>
+        
+        <p id="texto"></p>
+
+        <script>
+            $("#bloco").on({
+                click:()=>{$("#texto").text("Cliquei no quadrado")},
+                mouseenter:()=>{$("#texto").text("Mouse entrou no quadrado")},
+                mouseleave:()=>{$("#texto").text("Mouse saiu do quadrado")},
+                dblclick:()=>{$("#texto").text("Clique duplo no quadrado")}
+            })
+            
+            $('#bloco2').click(()=>{
+                $('#bloco').trigger('Click')
+             })
+           
+            
+        </script>
+    </body>
+</html>

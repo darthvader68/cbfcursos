@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JQuery</title>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <style>
+        
+        .caixa {
+            background-color: #ff0;
+            border: 3px solid #f00;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caixa" class="caixa">
+        <h4 id="p1">CFB Cursos</h4>
+        <h4 id="p2">Curso de JQuery</h4>
+        <h4 id="p4">cfbcursos.com.br</h4>
+        <h4 id="p5">youtube.com/cfbcursos</h4>
+    </div>
+
+    <p id="p1">CFB Cursos</p>
+    <p id="p2">Curso de JQuery</p>
+    <p id="p3">Função length</p>
+    <p id="p4">cfbcursos.com.br</p>
+    <p id="p5">youtube.com/cfbcursos</p>
+    <p id="p5">Estudando JQuery</p>
+    
+    <button id="btn_p">Quantidade de p</button>
+    <button id="btn_h4">Quantidade de h4</button>
+    
+    <script>
+        $("#btn_p").click((e)=>{
+            alert($("p").length)
+        })
+        $("#btn_h4").click(function(){
+            alert($("h4").length)
+        })
+               
+    </script>
+</body>
+
+</html> 

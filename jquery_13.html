@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JQuery</title>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <style></style>
+</head>
+
+<body>
+    <div>
+        <span>
+            <h3>CFB Cursos</h3>
+            <p>Curso JQuery</p>
+            <h2>Seletores Irmaos</h2>
+            <p>Sibling</p>
+        </span>
+    </div>
+    <script>
+        $('h2').nextAll().css({'border':'1px solid #f00'})
+        //Siblings - elementos irmaos:
+        //prev, prevAll(todos antes) , prevUntil(antes ate)
+        //next, nextAll(proximo antes), nextUntil(proximo ate)
+    </script>
+</body>
+
+</html>        
